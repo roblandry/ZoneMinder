@@ -61,6 +61,9 @@ RUN apt-get update \
     zip \
 	&& rm -rf /var/lib/apt/lists/*
 
+# Added based on cmake error
+RUN git submodule update --init --recursive
+
 # Copy local code into our container
 ADD cmake /ZoneMinder/cmake/
 ADD db /ZoneMinder/db/
