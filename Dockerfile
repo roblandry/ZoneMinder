@@ -59,6 +59,7 @@ RUN apt-get update \
     vlc-data \
     yasm \
     zip \
+	git \
 	&& rm -rf /var/lib/apt/lists/*
 
 # Added based on cmake error
