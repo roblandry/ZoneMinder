@@ -60,6 +60,7 @@ RUN apt-get update \
     yasm \
     zip \
 	git \
+	libboost-all-dev \
 	&& rm -rf /var/lib/apt/lists/*
 
 # Added based on cmake error
